@@ -1,0 +1,172 @@
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 16px;
+  position: relative;
+}
+
+.searchWrapper {
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 320px;
+  margin: 0 auto;
+  background: #f3f4f6;
+  padding: 8px 14px;
+  border-radius: 9999px;
+}
+
+.loadingSpinner {
+  position: absolute;
+  right: 10px;
+}
+
+.searchIcon {
+  font-size: 18px;
+  color: #6b7280;
+}
+
+.searchInput {
+  margin-left: 10px;
+  font-size: 14px;
+  border: none;
+  background: transparent;
+  width: 100%;
+  outline: none;
+}
+
+/* Dropdown */
+.dropdown {
+  position: absolute;
+  left: 50%;
+  top: 70px;
+  transform: translateX(-50%);
+  width: 600px;
+  max-height: 0px;
+  background: white;
+  border-color: #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: max-height 0.25s ease;
+}
+
+.dropdown.open {
+  max-height: 320px;
+  border: 1px solid #e5e7eb
+}
+
+.noResults {
+  padding: 16px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* Items */
+.itemsWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  display: flex;
+  gap: 12px;
+  padding: 10px 16px;
+  border-bottom: 1px solid #f3f4f6;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.item:hover {
+  background: #f9fafb;
+}
+
+.itemImage {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.itemTitle {
+  font-weight: 600;
+  margin: 0;
+}
+
+.itemArtist {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* View More */
+.viewMore {
+  padding: 12px;
+  text-align: center;
+  color: #2563eb;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.viewMore:hover {
+  background: #f3f4f6;
+}
+
+.group {
+  padding: 12px 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.group:last-of-type {
+  border-bottom: none;
+}
+
+.groupTitle {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #6b7280;
+  font-weight: 700;
+  padding: 4px 16px 8px 16px;
+}
+
+.dropdown {
+  position: absolute;
+  left: 50%;
+  top: 70px;
+  transform: translateX(-50%);
+  width: 600px;
+
+  /* ANIMATION */
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.25s ease;
+
+  background: white;
+  border-color: #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* When open */
+.dropdown.open {
+  max-height: 360px; /* 👈 adjust to your design */
+  overflow-y: auto;  /* 👈 enables scrolling when content grows */
+}
+
+/* Smooth scrollbar (optional but recommended) */
+.dropdown::-webkit-scrollbar {
+  width: 6px;
+}
+.dropdown::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 20px;
+}
+.dropdown::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}

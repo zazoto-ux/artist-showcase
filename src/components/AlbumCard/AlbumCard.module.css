@@ -1,0 +1,29 @@
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 12px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.cover {
+  width: 100%;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.artist {
+  font-size: 12px;
+  color: #7a7a7a;
+}
